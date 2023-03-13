@@ -5,14 +5,14 @@ basic.forever(function () {
         music.stopAllSounds()
         basic.showIcon(IconNames.Confused)
         basic.pause(5000)
-        servos.P1.setAngle(90)
+        servos.P1.setAngle(0)
     } else if (input.soundLevel() > 5) {
         basic.showIcon(IconNames.Asleep)
         basic.pause(2000)
-        servos.P1.setAngle(0)
+        servos.P1.setAngle(90)
     } else {
         basic.showIcon(IconNames.Happy)
         basic.pause(2000)
-        servos.P1.setAngle(0)
+        servos.P1.setAngle(90)
     }
 })
